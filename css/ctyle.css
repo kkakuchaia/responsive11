@@ -17,13 +17,13 @@ header{
     background-color: blue;
 }
 .fullheader{
-max-width: 1100px;
-width: 100%;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 0;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
 }
 .navigation ul{
     display: flex;
@@ -39,6 +39,9 @@ padding: 15px 0;
 .nav{
     margin:0 15px;
 }
+.sendvitch{
+    display: none;
+}
 .first{
     background-color: blue;
 }
@@ -50,12 +53,10 @@ padding: 15px 0;
     padding-top: 40px;
     justify-content: space-between;
     padding-bottom: 40px;
-
 }
 .firstpicblock{
     display: flex;
     flex-direction: column;
-    
 }
 .firstpic{
     /* width: 450px; */
@@ -86,6 +87,9 @@ padding: 15px 0;
     background-color: white;
     border-radius:90px;
     margin:0px 7px;
+}
+.dots2{
+    display: none;
 }
 .secblock{
     padding-bottom: 100px;
@@ -132,7 +136,6 @@ h2{
 }
 .secimg{
     box-shadow: -8px 8px blue;
-
 }
 @media (max-width:1024px) {
     .fullheader{
@@ -153,7 +156,93 @@ h2{
     }
     a{
         font-size: 12px;
+    }   
+}
+@media (max-width:412px) { 
+    .fullheader{
+        padding: 10px 0;
     }
-   
-    
+    .sendvitch{
+        display: inline-block;
+        height: 45px;
+    }
+    .sendvitch img{
+        width: 100%;
+        height: 100%;
+    }
+    .logo a img{
+        width: 60px
+    }
+    .navigation ul{
+        display: none;
+    }
+    .firstblock{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .firstpic{
+        height: 170px;
+        margin-top: 35px;
+    }
+    .secpic{
+        height: 230px;
+        width: 250px;
+    }
+    .dots{
+        display: none;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .dots2{
+        display: flex;     
+    }
+    .dots2 span{
+        height: 7px;
+        width: 7px;
+        margin: 0 7px;
+        background-color: white;
+        border-radius: 90px;
+    }
+    h2{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .firstarticle{
+        flex-wrap: wrap-reverse;
+        padding-top: 0px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .articleimg{
+        margin-top: 110px;
+        box-shadow: none;
+        max-width: 400px;
+        width: 100%;
+    }
+    .secarticle{
+        flex-wrap: wrap;
+        max-width: 400px;
+        width: 100%;
+    }
+    .articletext{
+        max-width: 356px;
+        width: 90%;
+        margin: 30px auto;  
+    }
+    .articletext p{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .articletext2 {
+        margin-left: 0px;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .articleimg{
+        border-radius: none;
+    }  
 }
