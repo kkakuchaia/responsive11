@@ -158,7 +158,7 @@ h2{
         font-size: 12px;
     }   
 }
-@media (max-width:412px) { 
+@media (max-width:420px) { 
     .fullheader{
         padding: 10px 0;
     }
